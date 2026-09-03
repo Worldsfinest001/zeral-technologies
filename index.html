@@ -323,7 +323,6 @@
         .review-card .client-email a:hover {
             text-decoration: underline;
         }
-        /* Avatar placeholder — now uses an <img> */
         .avatar-placeholder {
             flex-shrink: 0;
             width: 2.5rem;
@@ -678,7 +677,7 @@
                 </div>
             </section>
 
-            <!-- ===== CLIENT REVIEWS (8 reviews, 5.0 badge, emails, image placeholders) ===== -->
+            <!-- ===== CLIENT REVIEWS (8 reviews, 5.0 badge, emails, FIXED SVG avatars) ===== -->
             <section class="py-16 md:py-24 bg-[#f8fafc] reveal" aria-labelledby="reviews-heading">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center max-w-2xl mx-auto">
@@ -701,7 +700,7 @@
                         </div>
                     </div>
 
-                    <!-- 8 Reviews with <img> placeholder (data URI) -->
+                    <!-- 8 Reviews with SVG placeholders (data URIs) -->
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
 
                         <!-- 1. Conor Kearney -->
@@ -825,7 +824,7 @@
                             </p>
                             <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
                                 <div class="avatar-placeholder">
-                                    <img src="data:image/5.jpeg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23e8f0fe'/%3E%3Ccircle cx='20' cy='13' r='7' fill='%23cbd5e1'/%3E%3Cpath d='M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z' fill='%23cbd5e1'/%3E%3C/svg%3E" alt="Adriaan van Dam" loading="lazy" />
+                                    <img src="data:image/5jpeg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23e8f0fe'/%3E%3Ccircle cx='20' cy='13' r='7' fill='%23cbd5e1'/%3E%3Cpath d='M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z' fill='%23cbd5e1'/%3E%3C/svg%3E" alt="Adriaan van Dam" loading="lazy" />
                                 </div>
                                 <div>
                                     <p class="text-sm font-semibold text-[#0b1a2e]">Adriaan van Dam</p>
@@ -847,7 +846,7 @@
                             </p>
                             <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
                                 <div class="avatar-placeholder">
-                                    <img src="data:image/4.jpeg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23e8f0fe'/%3E%3Ccircle cx='20' cy='13' r='7' fill='%23cbd5e1'/%3E%3Cpath d='M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z' fill='%23cbd5e1'/%3E%3C/svg%3E" alt="Alexandra McLeod" loading="lazy" />
+                                    <img src="data:image/6.jpeg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23e8f0fe'/%3E%3Ccircle cx='20' cy='13' r='7' fill='%23cbd5e1'/%3E%3Cpath d='M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z' fill='%23cbd5e1'/%3E%3C/svg%3E" alt="Alexandra McLeod" loading="lazy" />
                                 </div>
                                 <div>
                                     <p class="text-sm font-semibold text-[#0b1a2e]">Alexandra McLeod</p>
@@ -905,7 +904,9 @@
             </section>
         </section>
 
-        <!-- ====== ABOUT PAGE ====== -->
+        <!-- ============================================================ -->
+        <!-- ABOUT PAGE -->
+        <!-- ============================================================ -->
         <section id="page-about" class="page-content" role="article" aria-labelledby="about-page-heading" hidden>
             <h1 id="about-page-heading" class="sr-only">About Zeral Technologies Ltd</h1>
 
@@ -1049,7 +1050,9 @@
             </section>
         </section>
 
-        <!-- ====== SERVICES PAGE ====== -->
+        <!-- ============================================================ -->
+        <!-- SERVICES PAGE -->
+        <!-- ============================================================ -->
         <section id="page-services" class="page-content" role="article" aria-labelledby="services-page-heading" hidden>
             <h1 id="services-page-heading" class="sr-only">Our Services — Zeral Technologies Ltd</h1>
 
@@ -1255,7 +1258,9 @@
             </section>
         </section>
 
-        <!-- ====== WORK PAGE ====== -->
+        <!-- ============================================================ -->
+        <!-- WORK PAGE -->
+        <!-- ============================================================ -->
         <section id="page-work" class="page-content" role="article" aria-labelledby="work-page-heading" hidden>
             <h1 id="work-page-heading" class="sr-only">Our Work — Zeral Technologies Ltd</h1>
 
@@ -1290,7 +1295,9 @@
             </section>
         </section>
 
-        <!-- ====== CONTACT PAGE ====== -->
+        <!-- ============================================================ -->
+        <!-- CONTACT PAGE -->
+        <!-- ============================================================ -->
         <section id="page-contact" class="page-content" role="article" aria-labelledby="contact-page-heading" hidden>
             <h1 id="contact-page-heading" class="sr-only">Contact Zeral Technologies Ltd</h1>
 
@@ -1444,6 +1451,7 @@
         </div>
     </footer>
 
+    <!-- ====== SCRIPTS ====== -->
     <script>
         // ================================================================
         // SPA ROUTING
