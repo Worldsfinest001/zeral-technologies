@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeral Technologies Ltd | Digital Solutions &amp; Business Automation</title>
-    <link rel="icon" type="image/logo.png" href="/favicon.png">
     <meta name="description" content="Zeral Technologies Ltd provides digital solutions, business automation, workflow optimization, system integration and technology consulting for modern businesses in Nigeria." />
     <meta property="og:title" content="Zeral Technologies Ltd | Digital Solutions &amp; Business Automation" />
     <meta property="og:description" content="Zeral Technologies Ltd provides digital solutions, business automation, workflow optimization, system integration and technology consulting for modern businesses." />
@@ -51,7 +50,6 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Focus states */
         a:focus-visible,
         button:focus-visible,
         input:focus-visible,
@@ -62,7 +60,6 @@
             border-radius: 4px;
         }
 
-        /* Skip link */
         .skip-link {
             position: absolute;
             top: -100%;
@@ -80,7 +77,6 @@
             top: 0;
         }
 
-        /* Smooth page transitions */
         .page-content {
             opacity: 0;
             transform: translateY(12px);
@@ -91,7 +87,6 @@
             transform: translateY(0);
         }
 
-        /* Section reveal */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -102,7 +97,6 @@
             transform: translateY(0);
         }
 
-        /* Mobile menu */
         .mobile-menu {
             transform: translateX(100%);
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -120,7 +114,6 @@
             pointer-events: all;
         }
 
-        /* Nav link active */
         .nav-link.active {
             color: var(--accent);
             font-weight: 600;
@@ -135,7 +128,6 @@
             margin-top: 2px;
         }
 
-        /* Service card */
         .service-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -144,17 +136,6 @@
             box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
         }
 
-        /* Tech logo pill */
-        .tech-pill {
-            transition: all 0.2s ease;
-        }
-        .tech-pill:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.12);
-            border-color: var(--accent);
-        }
-
-        /* Button hover */
         .btn-primary {
             background: var(--primary);
             color: #fff;
@@ -188,7 +169,6 @@
             transform: translateY(-2px);
         }
 
-        /* Form */
         .form-input {
             width: 100%;
             padding: 0.75rem 1rem;
@@ -227,7 +207,6 @@
             display: block;
         }
 
-        /* Footer links */
         .footer-link {
             transition: color 0.2s ease;
         }
@@ -235,7 +214,6 @@
             color: var(--accent-light);
         }
 
-        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -250,7 +228,6 @@
             background: var(--primary);
         }
 
-        /* Responsive tweaks */
         @media (max-width: 640px) {
             .hero-title {
                 font-size: 2.25rem !important;
@@ -264,7 +241,6 @@
             }
         }
 
-        /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,
@@ -287,9 +263,82 @@
             .btn-outline:hover {
                 transform: none !important;
             }
-            .tech-pill:hover {
-                transform: none !important;
-            }
+        }
+
+        .review-card {
+            background: #ffffff;
+            border: 1px solid #eef2f6;
+            border-radius: 16px;
+            padding: 1.75rem 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.25s ease;
+            border-left: 4px solid #2d7fea;
+        }
+        .review-card:hover {
+            box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+        .review-card .quote-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 400;
+            color: #1e293b;
+            letter-spacing: 0.01em;
+        }
+        .review-card .quote-icon {
+            opacity: 0.12;
+            margin-bottom: 0.25rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #2d7fea;
+        }
+        .review-card .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: #f0f7ff;
+            padding: 0.2rem 0.6rem 0.2rem 0.5rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #2d7fea;
+            margin-bottom: 0.5rem;
+        }
+        .review-card .stars {
+            display: inline-flex;
+            gap: 0.1rem;
+            color: #f59e0b;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+        .review-card .client-email {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 0.1rem;
+        }
+        .review-card .client-email a {
+            color: #2d7fea;
+            text-decoration: none;
+        }
+        .review-card .client-email a:hover {
+            text-decoration: underline;
+        }
+        /* Avatar placeholder */
+        .avatar-placeholder {
+            flex-shrink: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 9999px;
+            background: #e8f0fe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .avatar-placeholder svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: #94a3b8;
         }
     </style>
 </head>
@@ -302,13 +351,11 @@
     <header role="banner" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
                 <a href="#" data-page="home" class="flex items-center gap-2 text-xl font-extrabold tracking-tight no-underline text-[#0b1a2e] nav-link" aria-label="Zeral Technologies Ltd home">
                     <span class="text-2xl">ZER<span class="text-[#2d7fea]">Λ</span>L</span>
                     <span class="hidden sm:inline text-sm font-medium text-[#475569] tracking-wide ml-1 border-l border-gray-300 pl-3">Technologies</span>
                 </a>
 
-                <!-- Desktop Nav -->
                 <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
                     <a href="#" data-page="home" class="nav-link text-sm font-medium text-[#1e293b] hover:text-[#2d7fea] transition-colors no-underline" aria-current="page">Home</a>
                     <a href="#" data-page="about" class="nav-link text-sm font-medium text-[#1e293b] hover:text-[#2d7fea] transition-colors no-underline">About</a>
@@ -318,7 +365,6 @@
                     <a href="#" data-page="contact" class="btn-accent px-5 py-2.5 rounded-lg text-sm font-semibold no-underline">Get Started</a>
                 </nav>
 
-                <!-- Mobile hamburger -->
                 <button id="menuToggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <line x1="4" y1="6" x2="20" y2="6" />
@@ -329,7 +375,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobileOverlay" class="mobile-overlay fixed inset-0 bg-black/40 z-40 md:hidden"></div>
         <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-2xl z-50 md:hidden overflow-y-auto">
             <div class="flex items-center justify-between p-5 border-b border-gray-100">
@@ -352,8 +397,8 @@
             <div class="p-6 border-t border-gray-100 text-sm text-[#64748b]">
                 <p class="font-medium text-[#0b1a2e]">Zeral Technologies Ltd</p>
                 <p class="mt-1">5, Afao Street, Off Ikere Road, Ekiti State, Nigeria</p>
-                <p class="mt-1"><a href="tel:+2349161405944" class="text-[#2d7fea] no-underline hover:underline">+2349161405944</a></p>
-                <p><a href="mailto:Zeraltechnologoes2026@gmail.com" class="text-[#2d7fea] no-underline hover:underline">Zeraltechnologoes2026@gmail.com</a></p>
+                <p class="mt-1"><a href="tel:09161405944" class="text-[#2d7fea] no-underline hover:underline">09161405944</a></p>
+                <p><a href="mailto:Israelagboola1234@gmail.com" class="text-[#2d7fea] no-underline hover:underline">Israelagboola1234@gmail.com</a></p>
             </div>
         </div>
     </header>
@@ -580,34 +625,6 @@
                 </div>
             </section>
 
-            <!-- TECH ECOSYSTEM -->
-            <section class="py-16 md:py-20 bg-[#f8fafc] reveal" aria-labelledby="tech-heading">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center max-w-2xl mx-auto">
-                        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#2d7fea]">Ecosystem</span>
-                        <h2 id="tech-heading" class="section-title text-3xl sm:text-4xl font-extrabold text-[#0b1a2e] mt-2">Tools &amp; Platforms We Work With</h2>
-                        <p class="mt-3 text-[#475569]">Leveraging a modern technology ecosystem to deliver the right solution for your business.</p>
-                    </div>
-                    <div class="flex flex-wrap justify-center gap-3 mt-10">
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Make</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Zapier</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">n8n</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">ClickUp</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Notion</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Airtable</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">HubSpot</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Zoho</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Monday.com</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Asana</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Trello</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Pipedrive</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">GoHighLevel</span>
-                        <span class="tech-pill px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-[#1e293b] shadow-sm">Microsoft Excel</span>
-                    </div>
-                    <p class="text-center text-xs text-[#94a3b8] mt-5">* Zeral Technologies is not affiliated with these platforms unless explicitly stated. We work with them to deliver solutions.</p>
-                </div>
-            </section>
-
             <!-- WHY CHOOSE -->
             <section class="py-16 md:py-24 bg-[#0b1a2e] text-white reveal" aria-labelledby="why-heading">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -663,6 +680,243 @@
                 </div>
             </section>
 
+            <!-- ===== CLIENT REVIEWS (8 reviews, 5.0 badge, emails, photo placeholders) ===== -->
+            <section class="py-16 md:py-24 bg-[#f8fafc] reveal" aria-labelledby="reviews-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto">
+                        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-[#2d7fea]">Testimonials</span>
+                        <h2 id="reviews-heading" class="section-title text-3xl sm:text-4xl font-extrabold text-[#0b1a2e] mt-2">What Our Clients Say</h2>
+                        <p class="mt-3 text-[#475569]">Real feedback from businesses we've helped transform.</p>
+                    </div>
+
+                    <!-- Video Embed -->
+                    <div class="max-w-3xl mx-auto mt-12">
+                        <div class="relative aspect-video rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-[#0b1a2e]">
+                            <iframe
+                                src="https://player.vimeo.com/video/1086016507?h=62fd9735f6&title=0&byline=0&portrait=0"
+                                class="absolute inset-0 w-full h-full"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                                allowfullscreen
+                                title="Client video review"
+                            ></iframe>
+                        </div>
+                    </div>
+
+                    <!-- 8 Reviews with photo placeholders -->
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+                        <!-- 1. Conor Kearney -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Such a great experience working with Israel – not only great at his job but also a very nice person. Communication was outstanding, fast, informative and clear. Work Quality was 100%. He set up my Monday.com board for my sales team and debugged my old Monday board. I will be working with Israel again when I transfer my back end booking system from Trello to Monday."
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <!-- Photo placeholder -->
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/185tfUSnA886UX6jPhIq">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Conor Kearney</p>
+                                    <p class="text-xs text-[#94a3b8]">Co-Founder, Luxury Golf Tours Asia</p>
+                                    <p class="client-email"><a href="mailto:Conor@luxurygolftoursasia.com">Conor@luxurygolftoursasia.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Jeanette Hunter -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Israel helped me set up my Plutio CRM. He worked quickly and was great at communicating with me. It gave me a head start in the CRM and saved me some time in trying to figure everything out."
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/tkXm8eEtrHUK8DZGGzyl">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Jeanette Hunter</p>
+                                    <p class="text-xs text-[#94a3b8]">Founder, JH Virtual Assistant</p>
+                                    <p class="client-email"><a href="mailto:info@jeanettehunter.co.uk">info@jeanettehunter.co.uk</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Alec Harden-Henry -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Israel was helpful, professional, knew his stuff and a pleasure to work with."
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/suwB3GoaI0JQGjOeSvfN">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Alec Harden-Henry</p>
+                                    <p class="text-xs text-[#94a3b8]">Head of Operations, Air Marketing</p>
+                                    <p class="client-email"><a href="mailto:alec@startup-growth.co.uk">alec@startup-growth.co.uk</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Christophe Diouf -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "I onboarded Israel so he could help me with operations and ever since I onboarded him all projects we're working on are happening on time (and fully up to standard). Highly recommend!"
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/Iy5kjryFtNOhm9vYq5TS">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Christophe Diouf</p>
+                                    <p class="text-xs text-[#94a3b8]">Founder, F-LINK CONSULTING</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Shereen Patels -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Great working with Israel."
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/KVNGWbwb57Tdu2GGcuRH">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Shereen Patels</p>
+                                    <p class="text-xs text-[#94a3b8]">Founder, Sosher Media</p>
+                                    <p class="client-email"><a href="mailto:Info@sosher.co.uk">Info@sosher.co.uk</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Adriaan van Dam -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Israel was the perfect freelancer. He supported me until my Airtable project worked exactly as I wanted. I can highly recommend him – truly a professional."
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/fMD88wOg8aBXmjBQA80B">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Adriaan van Dam</p>
+                                    <p class="text-xs text-[#94a3b8]">CEO, Adriaanvandam_photography</p>
+                                    <p class="client-email"><a href="mailto:Info@adriaanvandam.nl">Info@adriaanvandam.nl</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Alexandra McLeod -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Professional, communicative and knowledgeable. Unfortunately, we did not get to complete our project due to a change in direction at our company, but the work he had completed was strong and heading in the right direction. Overall he was very collaborative, and I would hire him again."
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Alexandra McLeod</p>
+                                    <p class="text-xs text-[#94a3b8]">Operational Manager, Winston Agency</p>
+                                    <p class="client-email"><a href="mailto:Alexandra.mcleod5@gmail.com">Alexandra.mcleod5@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 8. Mario McKenzie -->
+                        <div class="review-card">
+                            <div class="rating-badge">
+                                <span class="font-bold">5.0</span>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4zm-8 6h-4v-4h4v4zm8 0h-4v-4h4v4z"/></svg>
+                            <p class="quote-text">
+                                "Israel built an exceptional Notion dashboard that's been a game-changer for my writing and business management. His communication was outstanding. Highly recommended!"
+                            </p>
+                            <div class="mt-4 flex items-center gap-3 pt-3 border-t border-gray-100">
+                                <div class="avatar-placeholder">
+                                    <svg viewBox="0 0 40 40" fill="none" xmlns="https://kommodo.ai/i/80YOoxzzqwylNMcLkeVV">
+                                        <circle cx="20" cy="20" r="20" fill="#e8f0fe"/>
+                                        <circle cx="20" cy="13" r="7" fill="#cbd5e1"/>
+                                        <path d="M20 22 c-11 0 -16 6 -16 11 v3 h32 v-3 c0 -5 -5 -11 -16 -11z" fill="#cbd5e1"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-[#0b1a2e]">Mario McKenzie</p>
+                                    <p class="text-xs text-[#94a3b8]">CEO, Bavolar L.L.C</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
             <!-- FINAL CTA -->
             <section class="py-16 md:py-24 bg-white reveal" aria-labelledby="cta-heading">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -677,7 +931,7 @@
                             Contact Zeral Technologies
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
-                        <a href="tel:+2349161405944" class="btn-outline px-8 py-3.5 rounded-lg text-base font-semibold no-underline inline-flex items-center gap-2">
+                        <a href="tel:09161405944" class="btn-outline px-8 py-3.5 rounded-lg text-base font-semibold no-underline inline-flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             Call Us
                         </a>
@@ -686,13 +940,10 @@
             </section>
         </section>
 
-        <!-- ============================================================ -->
-        <!-- ABOUT PAGE -->
-        <!-- ============================================================ -->
+        <!-- ====== ABOUT PAGE ====== -->
         <section id="page-about" class="page-content" role="article" aria-labelledby="about-page-heading" hidden>
             <h1 id="about-page-heading" class="sr-only">About Zeral Technologies Ltd</h1>
 
-            <!-- Hero -->
             <section class="py-16 md:py-20 bg-[#f8fafc] border-b border-gray-100">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="max-w-3xl">
@@ -706,7 +957,6 @@
                 </div>
             </section>
 
-            <!-- Company intro -->
             <section class="py-16 md:py-20 bg-white reveal">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid md:grid-cols-2 gap-12 items-start">
@@ -750,7 +1000,6 @@
                 </div>
             </section>
 
-            <!-- Leadership -->
             <section class="py-16 md:py-20 bg-[#f8fafc] reveal">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center max-w-2xl mx-auto">
@@ -781,7 +1030,6 @@
                 </div>
             </section>
 
-            <!-- Core Values -->
             <section class="py-16 md:py-20 bg-white reveal">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center max-w-2xl mx-auto">
@@ -836,9 +1084,7 @@
             </section>
         </section>
 
-        <!-- ============================================================ -->
-        <!-- SERVICES PAGE -->
-        <!-- ============================================================ -->
+        <!-- ====== SERVICES PAGE ====== -->
         <section id="page-services" class="page-content" role="article" aria-labelledby="services-page-heading" hidden>
             <h1 id="services-page-heading" class="sr-only">Our Services — Zeral Technologies Ltd</h1>
 
@@ -1044,9 +1290,7 @@
             </section>
         </section>
 
-        <!-- ============================================================ -->
-        <!-- WORK PAGE -->
-        <!-- ============================================================ -->
+        <!-- ====== WORK PAGE ====== -->
         <section id="page-work" class="page-content" role="article" aria-labelledby="work-page-heading" hidden>
             <h1 id="work-page-heading" class="sr-only">Our Work — Zeral Technologies Ltd</h1>
 
@@ -1077,30 +1321,11 @@
                             Discuss your project →
                         </a>
                     </div>
-
-                    <!-- Case study template (hidden, for future use) -->
-                    <div class="hidden" aria-hidden="true">
-                        <div class="grid md:grid-cols-2 gap-8 text-left">
-                            <div class="bg-[#f8fafc] rounded-xl overflow-hidden border border-gray-100">
-                                <div class="h-48 bg-[#e8f0fe] flex items-center justify-center text-[#94a3b8]">Project Image</div>
-                                <div class="p-6">
-                                    <span class="text-xs font-semibold tracking-wider uppercase text-[#2d7fea]">Industry</span>
-                                    <h4 class="text-xl font-bold text-[#0b1a2e] mt-1">Project Name</h4>
-                                    <p class="text-sm text-[#475569] mt-2">Brief description of the project and the challenge.</p>
-                                    <div class="mt-3 flex flex-wrap gap-2">
-                                        <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-xs font-medium">Tech</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </section>
 
-        <!-- ============================================================ -->
-        <!-- CONTACT PAGE -->
-        <!-- ============================================================ -->
+        <!-- ====== CONTACT PAGE ====== -->
         <section id="page-contact" class="page-content" role="article" aria-labelledby="contact-page-heading" hidden>
             <h1 id="contact-page-heading" class="sr-only">Contact Zeral Technologies Ltd</h1>
 
@@ -1120,15 +1345,14 @@
             <section class="py-16 md:py-24 bg-white reveal">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid lg:grid-cols-5 gap-10">
-                        <!-- Contact Info -->
                         <div class="lg:col-span-2 space-y-6">
                             <div>
                                 <p class="text-sm font-semibold text-[#0b1a2e]">Phone</p>
-                                <a href="tel:+2349161405944" class="text-[#2d7fea] no-underline hover:underline text-lg font-medium">+2349161405944</a>
+                                <a href="tel:09161405944" class="text-[#2d7fea] no-underline hover:underline text-lg font-medium">09161405944</a>
                             </div>
                             <div>
                                 <p class="text-sm font-semibold text-[#0b1a2e]">Email</p>
-                                <a href="mailto:Zeraltechnologoes2026@gmail.com" class="text-[#2d7fea] no-underline hover:underline">Zeraltechnologoes2026@gmail.com</a>
+                                <a href="mailto:Israelagboola1234@gmail.com" class="text-[#2d7fea] no-underline hover:underline">Israelagboola1234@gmail.com</a>
                             </div>
                             <div>
                                 <p class="text-sm font-semibold text-[#0b1a2e]">Address</p>
@@ -1140,14 +1364,12 @@
                                     Digital Solutions &bull; Business Automation &bull; Technology Consulting
                                 </p>
                             </div>
-                            <!-- Simple map placeholder -->
                             <div class="mt-4 bg-[#f8fafc] rounded-xl border border-gray-200 p-4 text-center text-sm text-[#475569]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d7fea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                                 <span>Ekiti State, Nigeria — Map available upon request</span>
                             </div>
                         </div>
 
-                        <!-- Contact Form -->
                         <div class="lg:col-span-3 bg-[#f8fafc] rounded-2xl p-6 md:p-8 border border-gray-100">
                             <h3 class="text-xl font-bold text-[#0b1a2e]">Send an Inquiry</h3>
                             <p class="text-sm text-[#475569] mt-1">We'll get back to you within 24 hours.</p>
@@ -1205,7 +1427,9 @@
                                 <div id="formError" class="hidden p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
                                     ❌ Something went wrong. Please try again or contact us directly.
                                 </div>
-                                
+                                <p class="text-xs text-[#94a3b8] text-center mt-2">
+                                    * This form is a demo. In production, it would connect to your email service.
+                                </p>
                             </form>
                         </div>
                     </div>
@@ -1219,12 +1443,10 @@
     <footer role="contentinfo" class="bg-[#0b1a2e] text-white border-t border-[#1a2d44]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                <!-- Brand -->
                 <div class="lg:col-span-1">
                     <span class="text-2xl font-extrabold tracking-tight">ZER<span class="text-[#2d7fea]">Λ</span>L</span>
                     <p class="text-sm text-[#94a3b8] mt-2 max-w-xs">Zeral Technologies Ltd — digital solutions, business automation, and technology consulting for modern businesses.</p>
                 </div>
-                <!-- Nav -->
                 <div>
                     <h4 class="text-sm font-semibold uppercase tracking-wider text-[#94a3b8]">Quick Links</h4>
                     <ul class="mt-3 space-y-2 text-sm">
@@ -1235,16 +1457,14 @@
                         <li><a href="#" data-page="contact" class="footer-link text-[#cbd5e1] no-underline">Contact</a></li>
                     </ul>
                 </div>
-                <!-- Contact -->
                 <div>
                     <h4 class="text-sm font-semibold uppercase tracking-wider text-[#94a3b8]">Contact</h4>
                     <ul class="mt-3 space-y-2 text-sm text-[#cbd5e1]">
-                        <li><a href="tel:+2349161405944" class="footer-link no-underline text-[#cbd5e1]">+2349161405944</a></li>
-                        <li><a href="mailto:Zeraltechnologoes2026@gmail.com" class="footer-link no-underline text-[#cbd5e1]">Zeraltechnologoes2026@gmail.com</a></li>
+                        <li><a href="tel:09161405944" class="footer-link no-underline text-[#cbd5e1]">09161405944</a></li>
+                        <li><a href="mailto:Israelagboola1234@gmail.com" class="footer-link no-underline text-[#cbd5e1]">Israelagboola1234@gmail.com</a></li>
                         <li class="text-[#94a3b8]">5, Afao Street, Off Ikere Road, Ekiti State, Nigeria</li>
                     </ul>
                 </div>
-                <!-- Address / Legal -->
                 <div>
                     <h4 class="text-sm font-semibold uppercase tracking-wider text-[#94a3b8]">Company</h4>
                     <ul class="mt-3 space-y-2 text-sm text-[#94a3b8]">
@@ -1254,7 +1474,7 @@
                 </div>
             </div>
             <div class="mt-10 pt-6 border-t border-[#1a2d44] text-center text-xs text-[#64748b]">
-                <p>Built with care Nigeria.</p>
+                <p>Built with care in Ekiti State, Nigeria.</p>
             </div>
         </div>
     </footer>
@@ -1281,7 +1501,6 @@
             let currentPage = 'home';
 
             function showPage(pageId) {
-                // Hide all
                 Object.keys(pages).forEach(key => {
                     const el = pages[key];
                     if (el) {
@@ -1290,12 +1509,10 @@
                     }
                 });
 
-                // Show target
                 const target = pages[pageId];
                 if (target) {
                     target.classList.add('active');
                     target.hidden = false;
-                    // Trigger reveal animations
                     target.querySelectorAll('.reveal').forEach((el, i) => {
                         setTimeout(() => el.classList.add('visible'), 100 + i * 100);
                     });
@@ -1303,7 +1520,6 @@
 
                 currentPage = pageId;
 
-                // Update nav active state
                 document.querySelectorAll('.nav-link').forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('data-page') === pageId) {
@@ -1311,14 +1527,12 @@
                     }
                 });
 
-                // Update URL hash
                 if (pageId === 'home') {
                     history.pushState(null, '', '/');
                 } else {
                     history.pushState(null, '', '#' + pageId);
                 }
 
-                // Update title
                 const titles = {
                     home: 'Zeral Technologies Ltd | Digital Solutions & Business Automation',
                     about: 'About Us | Zeral Technologies Ltd',
@@ -1328,10 +1542,7 @@
                 };
                 document.title = titles[pageId] || titles.home;
 
-                // Close mobile menu
                 closeMobileMenu();
-
-                // Scroll to top
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
 
@@ -1349,7 +1560,6 @@
                 document.body.style.overflow = 'hidden';
             }
 
-            // Nav link clicks
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -1358,7 +1568,6 @@
                 });
             });
 
-            // Mobile menu toggle
             menuToggle.addEventListener('click', function() {
                 if (mobileMenu.classList.contains('open')) {
                     closeMobileMenu();
@@ -1370,14 +1579,12 @@
             menuClose.addEventListener('click', closeMobileMenu);
             mobileOverlay.addEventListener('click', closeMobileMenu);
 
-            // Close on escape
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
                     closeMobileMenu();
                 }
             });
 
-            // Handle hash on load and back/forward
             function handleHash() {
                 const hash = window.location.hash.replace('#', '') || 'home';
                 if (pages[hash]) {
@@ -1394,7 +1601,6 @@
                 else showPage('home');
             });
 
-            // Initial load
             const initialHash = window.location.hash.replace('#', '') || 'home';
             if (pages[initialHash]) {
                 showPage(initialHash);
@@ -1402,7 +1608,6 @@
                 showPage('home');
             }
 
-            // Expose for debugging
             window.__zeral = { showPage };
         })();
 
@@ -1421,14 +1626,12 @@
                 rootMargin: '0px 0px -40px 0px'
             });
 
-            // Observe all .reveal elements that are in the active page
             function observeReveals() {
                 document.querySelectorAll('.page-content.active .reveal:not(.visible)').forEach(el => {
                     observer.observe(el);
                 });
             }
 
-            // Run on page changes
             const origShowPage = window.__zeral?.showPage;
             if (origShowPage) {
                 const wrapped = function(pageId) {
@@ -1436,17 +1639,10 @@
                     setTimeout(observeReveals, 200);
                 };
                 window.__zeral.showPage = wrapped;
-                // Also patch the nav clicks
-                document.querySelectorAll('[data-page]').forEach(link => {
-                    const oldClick = link._listeners ? true : false;
-                    // We'll just observe after DOM updates
-                });
             }
 
-            // Observe on load and after any page transition
             setTimeout(observeReveals, 300);
 
-            // Also observe when new content becomes visible
             const observer2 = new MutationObserver(() => {
                 observeReveals();
             });
@@ -1499,7 +1695,6 @@
                 return valid;
             }
 
-            // Real-time validation
             [fullName, email, message].forEach((field, idx) => {
                 field.addEventListener('blur', function() {
                     const errors = [fullNameError, emailError, messageError];
@@ -1529,37 +1724,30 @@
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
 
-                // Reset
                 formSuccess.classList.add('hidden');
                 formError.classList.add('hidden');
 
                 if (!validateForm()) {
-                    // Focus first error
                     const firstError = form.querySelector('.form-input.error');
                     if (firstError) firstError.focus();
                     return;
                 }
 
-                // Simulate submission
                 submitBtn.disabled = true;
                 btnText.textContent = 'Sending...';
                 btnSpinner.classList.remove('hidden');
 
-                // Simulate async
                 setTimeout(() => {
                     submitBtn.disabled = false;
                     btnText.textContent = 'Send Inquiry';
                     btnSpinner.classList.add('hidden');
 
-                    // Show success (in demo mode)
                     formSuccess.classList.remove('hidden');
                     form.reset();
 
-                    // Clear error states
                     document.querySelectorAll('.form-input.error').forEach(el => el.classList.remove('error'));
                     document.querySelectorAll('.form-error.show').forEach(el => el.classList.remove('show'));
 
-                    // Auto-hide success after 6s
                     setTimeout(() => {
                         formSuccess.classList.add('hidden');
                     }, 6000);
@@ -1576,7 +1764,6 @@
                 }, 1800);
             });
 
-            // Reset error display on form reset
             form.addEventListener('reset', function() {
                 document.querySelectorAll('.form-input.error').forEach(el => el.classList.remove('error'));
                 document.querySelectorAll('.form-error.show').forEach(el => el.classList.remove('show'));
@@ -1603,8 +1790,8 @@
         });
 
         console.log('Zeral Technologies Ltd website loaded successfully.');
-        console.log('Built with ❤️ in Nigeria.');
-        console.log('For inquiries: Zeraltechnologoes2026@gmail.com | +2349161405944');
+        console.log('Built with ❤️ in Ekiti State, Nigeria.');
+        console.log('For inquiries: Israelagboola1234@gmail.com | 09161405944');
     </script>
 
 </body>
